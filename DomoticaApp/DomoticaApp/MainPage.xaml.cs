@@ -17,9 +17,14 @@ namespace DomoticaApp
         public MainPage()
         {
             InitializeComponent();
-
+            
             // Sample code to localize the ApplicationBar
             //BuildLocalizedApplicationBar();
+        }
+
+
+        public static int AddIntegers(int a, int b)  {
+            return (a + b);
         }
 
         // Sample code for building a localized ApplicationBar
