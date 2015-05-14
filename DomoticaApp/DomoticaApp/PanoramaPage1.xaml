@@ -1,0 +1,92 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="DomoticaApp.PanoramaPage1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:sys="clr-namespace:System;assembly=mscorlib"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait"  Orientation="Portrait"
+    shell:SystemTray.IsVisible="False">
+
+    <!--LayoutRoot contains the root grid where all other page content is placed-->
+    <Grid x:Name="LayoutRoot">
+        <phone:Panorama Title="Domotica">
+            <!--Assigns a background image to the Panorama control.-->
+            <phone:Panorama.Background>
+                <ImageBrush  ImageSource="img/Anton de Regt.jpg"/>
+            </phone:Panorama.Background>
+
+            <!--Panorama item one-->
+            <phone:PanoramaItem Header="MQTT Subscribe">
+                <Grid>
+                    <StackPanel>
+                        <TextBlock
+                    Text="This is a text added to the first panorama item control"
+                    Style="{StaticResource PhoneTextLargeStyle}"
+                    TextWrapping="Wrap"/>
+                        <TextBlock Text=" "/>
+                        <TextBlock
+                    Text="You can put any content you want here..."
+                    Style="{StaticResource PhoneTextLargeStyle}"
+                    TextWrapping="Wrap"/>
+                    </StackPanel>
+                </Grid>
+            </phone:PanoramaItem>
+
+            <!--Panorama item two-->
+            <phone:PanoramaItem Header="Sensor Data" Orientation="Horizontal">
+                <!--Assigns a border to the PanoramaItem control and background for the content section.-->
+                <Grid>
+                    <Border
+                BorderBrush="{StaticResource PhoneForegroundBrush}"
+                BorderThickness="{StaticResource PhoneBorderThickness}"
+                Background="#80808080">
+
+                        <TextBlock
+                    Text="This content is very wide and can be panned horizontally."
+                    Style="{StaticResource PhoneTextExtraLargeStyle}"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center" >
+                        </TextBlock>
+
+                    </Border>
+                </Grid>
+            </phone:PanoramaItem>
+
+            <!--Panorama item three-->
+            <phone:PanoramaItem Header="Settings">
+                <!--This code adds a series of string text values.-->
+                <Grid>
+                    <ListBox FontSize="{StaticResource PhoneFontSizeLarge}">
+                        <sys:String>This</sys:String>
+                        <sys:String>item</sys:String>
+                        <sys:String>has</sys:String>
+                        <sys:String>a</sys:String>
+                        <sys:String>short</sys:String>
+                        <sys:String>list</sys:String>
+                        <sys:String>of</sys:String>
+                        <sys:String>strings</sys:String>
+                        <sys:String>that</sys:String>
+                        <sys:String>you</sys:String>
+                        <sys:String>can</sys:String>
+                        <sys:String>scroll</sys:String>
+                        <sys:String>up</sys:String>
+                        <sys:String>and</sys:String>
+                        <sys:String>down</sys:String>
+                        <sys:String>and</sys:String>
+                        <sys:String>back</sys:String>
+                        <sys:String>again.</sys:String>
+                    </ListBox>
+                </Grid>
+            </phone:PanoramaItem>
+            
+        </phone:Panorama>
+    </Grid>
+
+</phone:PhoneApplicationPage>
