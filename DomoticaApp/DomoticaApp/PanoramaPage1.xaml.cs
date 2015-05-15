@@ -16,6 +16,11 @@ namespace DomoticaApp
         {
           InitializeComponent();
         }
+
+        private void settingsBTN_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/settingsPage.xaml", UriKind.Relative));
+        }
     }
     /*
     public partial class SensorDataPage : PhoneApplicationPage

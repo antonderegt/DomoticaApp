@@ -82,6 +82,7 @@
                         <sys:String>and</sys:String>
                         <sys:String>back</sys:String>
                         <sys:String>again.</sys:String>
+                        <Button x:Name="settingsBTN" Content="Settings" Click="settingsBTN_Click"/>
                     </ListBox>
                 </Grid>
             </phone:PanoramaItem>
