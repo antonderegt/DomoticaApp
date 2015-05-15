@@ -21,6 +21,7 @@ namespace DomoticaApp
         {
             InitializeComponent();
             
+            // Check if empty
             if ((!(appSettings.Contains("IP"))) || (!(appSettings.Contains("PORT"))))
             {
                 appSettings.Add("IP", "");
